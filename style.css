@@ -15,6 +15,7 @@ body {
     align-items: center;
     background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
     display: flex;
+    flex-direction: column;
     font-family: 'Dosis', sans-serif;
     font-display: swap;
     height: inherit;
@@ -101,4 +102,65 @@ body {
 
 .triple {
     flex-basis: 73%;
+}
+
+.log-section {
+    max-width: 540px;      
+    width: 100%;           
+    margin: 20px auto; 
+    padding: 0 35px;       
+    box-sizing: border-box;
+}
+
+#btn-toggle-log {
+    width: 100%; 
+    padding: 15px; 
+    font-size: 1.2em; 
+    cursor: pointer;
+    font-family: 'Dosis', sans-serif; 
+    border-radius: 16px;
+    border: none;
+    background: #d72880;
+    color: white;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+}
+
+#btn-toggle-log:hover {
+    background-color: inherit;
+    color: inherit;
+}
+
+#log-container {
+    display: none; /* Começa escondido */
+    margin-top: 15px;
+    border-radius: 16px;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    padding: 15px 25px;
+    color: #232323;
+    box-sizing: border-box; /* Adicionado para consistência */
+}
+
+#log-container h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #232323;
+    padding-bottom: 5px;
+}
+
+#log-lista {
+    padding-left: 0; /* Ajustado */
+    list-style: none; 
+    margin: 0;
+}
+
+/* Estilos para cada item do log, conforme a atividade */
+#log-lista li {
+    font-family: monospace;
+    font-size: 0.9em;
+    padding: 5px 0;
+    border-bottom: 1px dashed #ddd;
 }

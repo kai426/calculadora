@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script src="script.js" defer></script>
     <title>Calculadora Moderna</title>
 </head>
+
 <body>
     <div class="wrapper">
         <section class="screen">
@@ -15,12 +17,18 @@
 
         <section class="calc-buttons">
             <div class="calc-button-row">
-                <button class="calc-button double">
+                <button class="calc-button">
                     C
                 </button>
                 <button class="calc-button">
-                    &larr;
+                    (
                 </button>
+                <button class="calc-button">
+                    )
+                </button>
+                <!-- <button class="calc-button">
+                    &larr;
+                </button> -->
                 <button class="calc-button">
                     &divide;
                 </button>
@@ -81,5 +89,20 @@
             </div>
         </section>
     </div>
+
+    <div class="log-section">
+
+        <button id="btn-toggle-log">
+            Ver Histórico
+        </button>
+
+        <div id="log-container">
+
+            <h3>Histórico de Cálculos</h3>
+            <ul id="log-lista">
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>
